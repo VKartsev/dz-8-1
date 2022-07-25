@@ -1,19 +1,19 @@
 package ru.netology.statistic;
 
 public class Radio {
-    private int currentStation = 0;
-    private int currentVolume = 9;
+    private int currentStation;
+    private int currentVolume;
 
-//public void setCurrentStation(int currentStation) {
+    public void setCurrentStation(int currentStation) {
 
- //       if (currentStation < 0) {
-  //          return;
-  //      }
- //       if (currentStation > 9) {
-   //         return;
-  //      }
-   //     this.currentStation = currentStation;
-  //  }
+        if (currentStation < 0) {
+            return;
+        }
+        if (currentStation > 9) {
+            return;
+        }
+        this.currentStation = currentStation;
+    }
 
     public int getCurrentStation() {
         return currentStation;
