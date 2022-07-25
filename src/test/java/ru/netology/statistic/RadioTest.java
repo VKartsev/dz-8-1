@@ -5,10 +5,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RadioTest {
-    Radio cond = new Radio();
     @Test
     void findCurrentStation() {
-       // Radio cond = new Radio();
+        Radio cond = new Radio();
 
         cond.setCurrentStation(5);
 
@@ -20,7 +19,7 @@ public class RadioTest {
 
     @Test
     void findCurrentStation2() {
-       // Radio cond = new Radio();
+        Radio cond = new Radio();
 
         cond.setCurrentStation(-1);
 
@@ -32,7 +31,7 @@ public class RadioTest {
 
     @Test
     void findCurrentStation3() {
-      //  Radio cond = new Radio();
+        Radio cond = new Radio();
 
         cond.setCurrentStation(10);
 
@@ -44,7 +43,7 @@ public class RadioTest {
 
     @Test
     void NextStation() {
-       // Radio cond = new Radio();
+        Radio cond = new Radio();
         cond.setCurrentStation(8);
         cond.setNextStation();
 
@@ -56,7 +55,7 @@ public class RadioTest {
 
     @Test
     void NextStation2() {
-      //  Radio cond = new Radio();
+        Radio cond = new Radio();
         cond.setCurrentStation(9);
         cond.setNextStation();
 
@@ -68,7 +67,7 @@ public class RadioTest {
 
     @Test
     void PrevStation() {
-     //   Radio cond = new Radio();
+        Radio cond = new Radio();
         cond.setCurrentStation(1);
         cond.setPrevStation();
 
@@ -80,7 +79,7 @@ public class RadioTest {
 
     @Test
     void PrevStation2() {
-     //   Radio cond = new Radio();
+        Radio cond = new Radio();
         cond.setCurrentStation(0);
         cond.setPrevStation();
 
@@ -92,7 +91,7 @@ public class RadioTest {
 
     @Test
     void findCurrentVolume() {
-    //    Radio cond = new Radio();
+        Radio cond = new Radio();
 
         cond.setCurrentVolume(5);
 
@@ -104,7 +103,7 @@ public class RadioTest {
 
     @Test
     void findCurrentVolume2() {
-    //    Radio cond = new Radio();
+        Radio cond = new Radio();
 
         cond.setCurrentVolume(-1);
 
@@ -116,7 +115,7 @@ public class RadioTest {
 
     @Test
     void findCurrentVolume3() {
-    //    Radio cond = new Radio();
+        Radio cond = new Radio();
 
         cond.setCurrentVolume(11);
 
@@ -128,7 +127,7 @@ public class RadioTest {
 
     @Test
     void increaseVolume() {
-   //     Radio cond = new Radio();
+        Radio cond = new Radio();
         cond.setCurrentVolume(9);
         cond.setIncreaseVolume();
 
@@ -140,7 +139,7 @@ public class RadioTest {
 
     @Test
     void increaseVolume2() {
-  //      Radio cond = new Radio();
+        Radio cond = new Radio();
         cond.setCurrentVolume(1);
         cond.setIncreaseVolume();
 
@@ -152,7 +151,7 @@ public class RadioTest {
 
     @Test
     void decreaseVolume() {
-   //     Radio cond = new Radio();
+        Radio cond = new Radio();
         cond.setCurrentVolume(1);
         cond.setDecreaseVolume();
 
@@ -164,7 +163,7 @@ public class RadioTest {
 
     @Test
     void decreaseVolume2() {
-  //      Radio cond = new Radio();
+        Radio cond = new Radio();
         cond.setCurrentVolume(0);
         cond.setDecreaseVolume();
 
