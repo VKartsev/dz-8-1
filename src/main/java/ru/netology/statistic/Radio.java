@@ -74,7 +74,7 @@ public class Radio {
         if (currentVolume < minVolume) {
             return;
         }
-        if (currentVolume >= maxVolume) { //PROVERIT
+        if (currentVolume >= maxVolume) { 
             return;
         }
         this.currentVolume = currentVolume;
@@ -84,7 +84,7 @@ public class Radio {
         return currentVolume;
     }
 
-    public void setIncreaseVolume() { //PROVERIT
+    public void setIncreaseVolume() { 
         currentVolume = getCurrentVolume();
         if (currentVolume < maxVolume) {
             currentVolume = currentVolume + 1;
@@ -92,7 +92,7 @@ public class Radio {
         }
 
     }
-    public void setDecreaseVolume() { //PROVERIT
+    public void setDecreaseVolume() { 
         currentVolume = getCurrentVolume();
         if (currentVolume > minVolume) {
             currentVolume = currentVolume - 1;
