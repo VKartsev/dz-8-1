@@ -1,20 +1,19 @@
 package ru.netology.statistic;
 
 public class Radio {
-    private int minStation;
+    private int minStation = 0;
     private int maxStation = 10 - 1;
     private int currentStation = maxStation;
-    private int minVolume;
+    private int minVolume = 0;
     private int maxVolume = 100;
     private int currentVolume = maxVolume;
 
     public Radio() {
     }
 
-    public Radio(int minStation, int maxStation, int minVolume, int maxVolume) {
+    public Radio(int minStation, int maxStation) {
         this.minStation = minStation;
         this.maxStation = maxStation - 1;
-        System.out.println("Radio initialized with min station " + minStation + " and max station " + maxStation);
     }
 
     public int getMinStation() {
