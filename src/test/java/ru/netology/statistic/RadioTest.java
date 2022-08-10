@@ -17,7 +17,7 @@ public class RadioTest {
 
     @Test
     void shouldCreateCustomRadio() {
-        Radio radio = new Radio(0, 20);
+        Radio radio = new Radio(20);
         assertEquals(19, radio.getMaxStation());
         assertEquals(0, radio.getMinStation());
         assertEquals(100, radio.getMaxVolume());
@@ -53,7 +53,7 @@ public class RadioTest {
 
     @Test
     void findCurrentStation4() {
-        Radio radio = new Radio(0, 20);
+        Radio radio = new Radio(20);
         radio.setCurrentStation(19);
         int actual = radio.getCurrentStation();
         int expected = 19;
@@ -69,7 +69,7 @@ public class RadioTest {
 
     @Test
     void findMaxStation2() {
-        Radio radio = new Radio(0, 30);
+        Radio radio = new Radio(30);
         int actual = radio.getMaxStation();
         int expected = 29;
         assertEquals(expected, actual);
@@ -99,7 +99,7 @@ public class RadioTest {
 
     @Test
     void NextStation3() {
-        Radio radio = new Radio(0, 20);
+        Radio radio = new Radio(20);
         radio.setCurrentStation(19);
         radio.setNextStation();
 
@@ -134,7 +134,7 @@ public class RadioTest {
 
     @Test
     void PrevStation3() {
-        Radio radio = new Radio(0, 30);
+        Radio radio = new Radio(30);
         radio.setCurrentStation(0);
         radio.setPrevStation();
 
